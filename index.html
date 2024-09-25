@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Manager</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="bg-body-secondary">
     <div class="container">
         <h1>Task Manager</h1>
         <form id="task-form">
             <input type="text" id="task-input" placeholder="Enter a new task">
-            <button type="submit">Add Task</button>
+            <button class="btn btn-dark rounded-5" type="submit">Add Task</button>
         </form>
         <div id="task-list"></div>
     </div>
-    <script src="script.js"></script>
+    <script type='module' src="script.js"></script>
+    <script type='module' src="./script.test.js"></script>
 </body>
 </html>
